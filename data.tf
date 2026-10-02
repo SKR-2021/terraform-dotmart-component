@@ -17,17 +17,17 @@ data "aws_ami" "dotmart" {
 }
 
 data "aws_ssm_parameter" "sg_id" {
-  name = "/${var.project_name}/${var.environment}/${component}_sg_id"
+  name = "/${var.project_name}/${var.environment}/${var.component}_sg_id"
 }
 
 data "aws_ssm_parameter" "vpc_id" {
-  name = "/${var.project_name}/${var.environment}/${component}_vpc_id"
+  name = "/${var.project_name}/${var.environment}/${var.component}_vpc_id"
 }
 
 data "aws_ssm_parameter" "backend_alb_listener_arn" {
-  name = "/${var.project_name}/${var.environment}/${component}_backend_alb_listener_arn"
+  name = "/${var.project_name}/${var.environment}/${var.component}_backend_alb_listener_arn"
 }
 
 data "aws_ssm_parameter" "frontend_alb_listener_arn" {
-  name = "/${var.project_name}/${var.environment}/${component}_frontend_alb_listener_arn"
+  name = "/${var.project_name}/${var.environment}/${var.component}_frontend_alb_listener_arn"
 }
