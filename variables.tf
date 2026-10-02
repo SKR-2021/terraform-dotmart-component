@@ -17,7 +17,7 @@ variable "instance_type" {
 }
 
 variable "domain_name" {
-  
+    default = "dso86s.xyz"
 }
 
 variable "rule_priority" {
